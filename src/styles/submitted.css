@@ -1,0 +1,274 @@
+/* SUBMITTED APPLICATIONS PAGE */
+
+.submitted-container {
+  width: 100%;
+  min-height: 1080px;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.submitted-container > p {
+  font-size: 56px;
+  line-height: 70px;
+  font-family: 'Rowdies';
+  color: var(--white);
+  width: 1154px;
+  text-align: left;
+  margin-top: 50px;
+}
+.submitted-container > div {
+  margin-top: 50px;
+  width: 1154px;
+}
+
+/* Submited App */
+
+.submitted-app label,
+.submitted-app input {
+  margin-top: 20px;
+}
+
+.submitted-app label {
+  margin-left: 8px !important;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat';
+  color: var(--black);
+}
+
+.submitted-app {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.submitted-top {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+  background: var(--redberry-red);
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.submitted-top > img {
+  width: 12.02px;
+  height: 7.42px;
+  cursor: pointer;
+}
+
+.submitted-bottom {
+  width: 100%;
+  background: var(--white);
+  padding: 20px;
+}
+
+.submitted-left-div, .submitted-right-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.submitted-left-div > div, .submitted-right-div > div {
+  padding: 20px;
+}
+
+.submitted-pers-key {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  color: var(--black);
+}
+.submitted-pers-value {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  color: var(--dark);
+}
+
+.submitted-p {
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: var(--redberry-red) !important;
+  font-family: 'Montserrat' !important;
+  text-decoration-line: underline !important;
+  font-style: italic !important;
+}
+
+.submitted-app p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Montserrat';
+  color: var(--black);
+}
+
+.submitted-app textarea {
+  font-size: 13px;
+  line-height: 16px;
+  font-family: 'Montserrat';
+  color: var(--textarea);
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.submitted-pers-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.submitted-pers-info div {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.submitted-pers-info div > p {
+  width: 50%;
+  text-align: left;
+}
+
+/* Covid */
+
+.submitted-covid {
+  margin-top: 30px;
+  align-items: flex-start !important;
+  width: 80%;
+}
+
+.submitted-covid > div {
+  margin-top: 40px;
+}
+
+.date-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.date-div img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 16px;
+  height: 18px;
+  background-color: transparent;
+}
+
+/* Skills */
+
+.submitted-skills {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.submitted-skills div {
+  width: 100%;
+}
+.submitted-skills-list-div {
+  margin-top: 20px;
+  width: 80% !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Insigts */
+
+.submitted-insigts {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.submitted-insigts div {
+  margin-top: 30px;
+}
+
+.submitted-insigts textarea {
+  resize: none;
+  width: 447px;
+  height: 122px;
+  margin-top: 15px;
+  padding: 25px 40px;
+}
+
+@media (max-width: 1920px) {
+  .submitted-container > p,
+  .submitted-container > div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .submitted-container textarea {
+    width: 80%;
+  }
+  .submitted-container input[type="date"]{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .submitted-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .submitted-left-div,
+  .submitted-right-div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .submitted-bottom {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 700px) {
+  .submitted-left-div,
+  .submitted-right-div {
+    width: 100%;
+  }
+  .submitted-skills-list-div {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .submitted-pers-info > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .submitted-container p {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 250px) {
+  .submitted-container p {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}

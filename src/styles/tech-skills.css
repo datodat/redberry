@@ -1,0 +1,159 @@
+/* form container */
+.skills-div {
+  width: 455px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-top-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+}
+.skills-top-div > div {
+  margin-top: 20px;
+}
+.skills-top-div button {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  background-color: var(--redberry-red);
+  border: none;
+  color: var(--white);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.skills-list-div {
+  position: relative;
+}
+.skills-list-div > input {
+  cursor: pointer;
+}
+.vector {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  z-index: 4;
+}
+
+.list-hidden {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1;
+}
+.list-hidden > div {
+  width: 100%;
+  background-color: var(--white);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17.07px;
+  font-family: 'Montserrat';
+  z-index: 3;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+select {
+  appearance: none;
+  cursor: pointer;
+}
+option {
+  border-radius: 0;
+  width: 100%;
+  font-size: 30px;
+}
+
+.skills-bottom-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  max-height: 370px;
+}
+.skills-bottom-div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+}
+.skills-bottom-div > div > div {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+.skills-bottom-div > div > div > p {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat';
+  font-style: italic;
+  color: var(--black);
+}
+.skills-bottom-div > div > img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+  .skills-div {
+    width: 90%;
+  }
+  .skills-bottom-div > div > div {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-div {
+    width: 60%;
+  }
+  .skills-div input {
+    font-size: 11px;
+    padding-left: 8px;
+  }
+  select {
+    padding-left: 8px !important;
+    font-size: 14px;
+  }
+  .skills-bottom-div {
+    max-height: none;
+  }
+  .skills-bottom-div > div {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+  }
+  .skills-bottom-div img {
+    margin: 0 !important;
+  }
+  .skills-bottom-div > div > div {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  .skills-bottom-div p {
+    font-size: 10px !important;
+  }
+}

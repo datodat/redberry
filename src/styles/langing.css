@@ -1,0 +1,112 @@
+/* Stars image */
+.stars-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
+/* Container */
+.langing-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header */
+.langing-heading-text-div {
+  z-index: 2;
+  text-align: center;
+  margin-top: 180px;
+}
+.langing-heading-text-div > h1 {
+  font-size: 96px;
+  line-height: 119.23px;
+  font-family: 'Rowdies';
+  color: var(--redberry-red);
+}
+
+/* Buttons */
+.langing-buttons-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+.langing-start-btn {
+  font-size: 24px;
+  line-height: 29.26px;
+  font-family: 'Montserrat';
+  color: var(--white);
+  background-color: var(--redberry-red);
+  padding: 20px 70px;
+  border: none;
+  border-radius: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+.langing-apps-btn {
+  font-size: 24px;
+  line-height: 29.26px;
+  font-family: 'Montserrat';
+  color: var(--white);
+  background: none;
+  border: none;
+  text-decoration-line: underline;
+  z-index: 2;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+@media (max-width: 1920px) {
+  .stars-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .langing-heading-text-div h1 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .langing-container {
+    /* height: auto; */
+  }
+}
+
+@media (max-width: 600px) {
+  .langing-heading-text-div h1 {
+    font-size: 35px;
+    line-height: 60px;
+  }
+  .langing-start-btn {
+    font-size: 20px;
+    padding: 15px 35px;
+  }
+  .langing-apps-btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .langing-heading-text-div h1 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .langing-start-btn {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+  .langing-apps-btn {
+    font-size: 16px;
+  }
+}

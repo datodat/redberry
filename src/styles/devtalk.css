@@ -1,0 +1,59 @@
+.devtalk-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.devtalk-container p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Montserrat';
+  color: var(--black);
+}
+
+.devtalk-container > div {
+  margin-top: 30px;
+  position: relative;
+}
+
+.devtalk-container form {
+  margin-top: 15px;
+}
+
+.devtalk-container form input {
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.devtalk-container form label {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat';
+  color: var(--black);
+  margin-left: 8px;
+}
+
+textarea {
+  margin-top: 20px;
+  resize: none;
+  width: 535px;
+  padding: 24px;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: 'Montserrat';
+  color: var(--textarea);
+}
+textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 1300px) {
+  .devtalk-container {
+    width: 90%;
+  }
+  .devtalk-container textarea {
+    width: 100%;
+  }
+}
